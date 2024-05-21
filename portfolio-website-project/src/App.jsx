@@ -2,14 +2,17 @@ import Header from "./Header.jsx"
 import Footer from "./Footer.jsx";
 import Food from "./Food.jsx";
 import Card from "./Card.jsx";
+import NavBar from "./components/NavBar.jsx";
 
 import Img1 from "./assets/picture1.png";
 import Img2 from "./assets/picture2.png";
 import Img3 from "./assets/picture3.png";
+import Img4 from "./assets/picture4.png";
 
 function App() {
     return(
         <>
+        <NavBar/>
         <Header/>
         <Food/>
         <div className="CardView">
@@ -28,7 +31,13 @@ function App() {
                 title="UI/UX Design "
                 description="PLAB"
             />
+            <Card
+                imgPath={Img4}
+                title="UI/UX Design "
+                description="PLAB"
+            />
         </div>
+
 
         <Footer/>
         </>
