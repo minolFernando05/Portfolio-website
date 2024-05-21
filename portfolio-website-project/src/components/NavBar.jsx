@@ -1,8 +1,9 @@
-import React,{useState} from 'react';
+import React,{useState,useEffect} from 'react';
 import './NavBar.css';
-import navLogo from "../assets/ryan-web-logo.svg";
+import navLogo from "../assets/ryan-web-logo2.svg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faXmark,faBars} from '@fortawesome/free-solid-svg-icons'
+import { Button } from './Button';
 
 
 
@@ -13,32 +14,51 @@ function NavBar() {
     const [click, setClick] = useState(false);
 
     const handleClick = () => setClick(!click);
-    const closeMobileMenue = () => setClick(false);
+    const closeMobileMenu = () => setClick(false);
+
+    const [button, setButton] = useState(true);
+
+    const showButton = () => {
+        if(window.innerWidth <= 960){
+            setButton(false);
+        }else{
+            setButton(true);
+        }
+    }
+
+    useEffect(() =>{
+        showButton();
+    })
+
+    window.addEventListener('resize', showButton);
+
+
     return (
         <>
         <nav className="navbar">
             <div className="navbar-container">
-                <img className='navbarlogo' src={navLogo} alt="navigation-bar-logo" />
-                <div className="menueIcon" onClick={handleClick}>
-                    <FontAwesomeIcon icon={click ? faBars : faXmark}/>
+                <img className='navbar-logo' src={navLogo} alt="navigation-bar-logo" />
+                <div className="menu-icon" onClick={handleClick}>
+                    <FontAwesomeIcon icon={click ? faXmark : faBars}/>
                 </div>
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                     <li className='nav-item'>
-                        <a href="/" className='nav-links' onClick={closeMobileMenue}>
+                        <a href="/" className='nav-links' onClick={closeMobileMenu}>
                             About Me
                         </a>
                     </li>
                     <li className='nav-item'>
-                        <a href="/about" className='nav-links' onClick={closeMobileMenue}>
+                        <a href="/about" className='nav-links' onClick={closeMobileMenu}>
                             Projects
                         </a>
                     </li>
                     <li className='nav-item'>
-                        <a href="/services" className='nav-links' onClick={closeMobileMenue}>
+                        <a href="/services" className='nav-links' onClick={closeMobileMenu}>
                             Skills
                         </a>    
                     </li>
                 </ul>
+                {button && <Button buttonStyle='btn--outline'>Get in Touch</Button>}
             </div>
         </nav>
         </>
