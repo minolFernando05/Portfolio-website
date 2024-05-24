@@ -1,10 +1,9 @@
 import React,{useState,useEffect} from 'react';
 import './NavBar.css';
-import navLogo from "../assets/ryan-web-logo2.svg";
+import navLogo from "../assets/ryan-web-logo.svg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faXmark,faBars} from '@fortawesome/free-solid-svg-icons'
 import { Button } from './Button';
-
 
 
 
@@ -32,6 +31,15 @@ function NavBar() {
 
     window.addEventListener('resize', showButton);
 
+    window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 0) {
+          navbar.classList.add('scrolled');
+        } else {
+          navbar.classList.remove('scrolled');
+        }
+      });
+
 
     return (
         <>
@@ -58,7 +66,7 @@ function NavBar() {
                         </a>    
                     </li>
                 </ul>
-                {button && <Button buttonStyle='btn--outline'>Get in Touch</Button>}
+                {button && <Button buttonStyle='btn--primary'>Get in Touch</Button>}
             </div>
         </nav>
         </>

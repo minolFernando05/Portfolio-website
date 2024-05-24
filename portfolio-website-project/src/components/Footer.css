@@ -1,0 +1,111 @@
+
+* {
+    /* box-sizing: border-box;
+    margin: 0;
+    padding: 0; */
+    font-family:Inter;
+  }
+  
+  .footer {
+      background: #15141a;
+      height: 90vh;
+    }
+
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 5rem 12rem;
+    }
+    
+    .footer-text {
+      display: flex;
+      flex-direction: column;
+    }
+
+    /*-------------------Contact Form-------------------*/
+    .contact-form {
+      padding-bottom: 2rem;
+    }
+
+    .toForm{
+      color: #fff;
+      font-size: 2.8rem;
+      font-weight: 400;
+      text-decoration: none;
+    }
+
+    /*-------------------Mail-------------------*/
+    .mailTo{
+      padding-bottom: 2rem;
+    }
+
+    .toMail{
+      color: #ffffff;
+      font-size: 1.4rem;
+      font-weight: 300;
+      text-decoration: none;
+    }
+
+    /*-------------------Social Media Icons-------------------*/
+
+    .footer-logo-link{
+      color: #ffffff;
+      font-size: 4em;
+      font-weight: 700;
+      text-decoration: none;
+    }
+  
+    .social-media-icons{
+        display: flex;
+        justify-content: space-between;
+        padding-right: 3.5rem;
+    }
+
+    
+    @media (max-width: 1000px) {
+
+
+      .footer-container {
+        background: #15141a;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+
+    /*-------------------Contact Form-------------------*/
+
+    .toForm{
+      color: #ffffff;
+      font-size: 2.8rem;
+      font-weight: 400;
+      text-decoration: none;
+    }
+
+    /*-------------------Mail-------------------*/
+
+    .toMail{
+      color: #fff;
+      font-size: 1.4rem;
+      font-weight: 300;
+      text-decoration: none;
+    }
+
+    /*-------------------Social Media Icons-------------------*/
+
+    .footer-logo-link{
+      color: #fff;
+      font-size: 3em;
+      font-weight: 700;
+      text-decoration: none;
+    }
+  
+    .social-media-icons{
+        display: flex;
+        align-items: flex-end;
+        padding: 0;
+    }
+
+
+  } 

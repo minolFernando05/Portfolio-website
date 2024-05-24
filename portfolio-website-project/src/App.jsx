@@ -1,5 +1,5 @@
 import Header from "./Header.jsx"
-import Footer from "./Footer.jsx";
+import Footer from "./components/Footer.jsx";
 import Food from "./Food.jsx";
 import Card from "./Card.jsx";
 import React from "react";
@@ -10,34 +10,14 @@ import Img2 from "./assets/picture2.png";
 import Img3 from "./assets/picture3.png";
 import Img4 from "./assets/picture4.png";
 
+import Home from './pages/Home';
+
 
 function App() {
     return(
         <>
         <NavBar/>
-
-        <div className="CardView">
-            <Card
-                imgPath={Img1}
-                title="UI/UX Design "
-                description="ShitPapers"
-            />
-            <Card
-                imgPath={Img2}
-                title="Branding & UI/UX Design "
-                description="Datapel Mobility Assistant"
-            />
-            <Card
-                imgPath={Img3}
-                title="UI/UX Design "
-                description="PLAB"
-            />
-            <Card
-                imgPath={Img4}
-                title="UI/UX Design "
-                description="PLAB"
-            />
-        </div>
+        <Home/>
 
 
         <Footer/>
