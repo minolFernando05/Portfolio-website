@@ -4,7 +4,7 @@ import navLogo from "../assets/ryan-web-logo.svg";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import {faXmark,faBars} from '@fortawesome/free-solid-svg-icons'
 import { Button } from './Button';
-
+import { Link } from 'react-router-dom';
 
 
 // import Img1 from "./assets/NavBarLogo.png";
@@ -26,8 +26,8 @@ function NavBar() {
     }
 
     useEffect(() =>{
-        showButton();
-    })
+        showButton()
+    },[]);
 
     window.addEventListener('resize', showButton);
 
@@ -45,15 +45,17 @@ function NavBar() {
         <>
         <nav className="navbar">
             <div className="navbar-container">
-                <img className='navbar-logo' src={navLogo} alt="navigation-bar-logo" />
+                <Link to="/" className='navbar-logo' src={navLogo} onClick={closeMobileMenu}>
+                    <img src={navLogo} alt="navigation-bar-logo"/>
+                </Link>
                 <div className="menu-icon" onClick={handleClick}>
                     <FontAwesomeIcon icon={click ? faXmark : faBars}/>
                 </div>
                 <ul className={click ? 'nav-menu active' : 'nav-menu'}>
                     <li className='nav-item'>
-                        <a href="/" className='nav-links' onClick={closeMobileMenu}>
+                        <Link to="/food" className='nav-links' onClick={closeMobileMenu}>
                             About Me
-                        </a>
+                        </Link>
                     </li>
                     <li className='nav-item'>
                         <a href="/about" className='nav-links' onClick={closeMobileMenu}>
@@ -65,8 +67,15 @@ function NavBar() {
                             Skills
                         </a>    
                     </li>
+                    <li className='nav-item'>
+                        <Link to='/sign-up'className='nav-links-mobile' onClick={closeMobileMenu}>
+                            Get in Touch
+                        </Link>
+                    </li>
                 </ul>
-                {button && <Button buttonStyle='btn--primary'>Get in Touch</Button>}
+                <div className="nav-btn">
+                    {button && <Button buttonStyle='btn--primary'>Get in Touch</Button>}
+                </div>
             </div>
         </nav>
         </>

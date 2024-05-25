@@ -27,20 +27,13 @@
   }
   
   .navbar-logo {
-    color: #fff;
     justify-self: start;
     margin-left: 5px;
     cursor: pointer;
-    text-decoration: none;
-    font-size: 2rem;
     display: flex;
     align-items: center;
   }
   
-  .fa-typo3 {
-    margin-left: 0.5rem;
-    font-size: 1.8rem;
-  }
   
   .nav-menu {
     display: grid;
@@ -90,9 +83,13 @@
     display: none;
   }
   
-  @media screen and (max-width: 1200px) {
+  @media(max-width: 1200px) {
     .NavbarItems {
       position: relative;
+    }
+
+    .nav-btn{
+      display: none;
     }
   
     .nav-menu {
@@ -144,11 +141,6 @@
       transform: translate(-100%, 80%);
       font-size: 1.8rem;
       cursor: pointer;
-    }
-  
-    .fa-times {
-      color: #fff;
-      font-size: 2rem;
     }
   
     .nav-links-mobile {

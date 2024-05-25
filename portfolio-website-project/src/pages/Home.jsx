@@ -10,7 +10,7 @@ function Home() {
         <HeroSection/>
         <div className="CardView">
             <Card
-                imgPath="./assets/picture1.png"
+                imgPath="../assets/picture1.png"
                 title="UI/UX Design "
                 description="ShitPapers"
             />
