@@ -1,0 +1,71 @@
+
+
+.intro{
+    margin:8rem;
+}
+
+.intro-text{
+    font-size: 4rem;
+    margin-bottom: 3rem;
+}
+
+.intro-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}   
+
+.highlight {
+  color: #0072f7;
+}
+
+.about{
+  display: flex;
+  align-content: space-around;
+  margin-left: 8rem;
+  margin-right: 8rem;
+}
+
+.about-title{
+  display: flex;
+  font-size: 2.5rem;
+  white-space: nowrap;
+  padding-right: 6rem;
+}
+
+.about-text{
+
+}
+
+.about-text-main{
+  font-size: 2.5rem;
+  padding-bottom: 2rem;
+}
+
+.about-text-sub{
+  font-size: 0.8rem;
+  line-height: 217%
+}
+
+.projects{
+margin: 8rem;
+}
+
+.projects-title{
+  font-size: 2.5rem;
+  padding-bottom: 2rem;
+}
+
+.projects-cards{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+}
+
+@media(max-width: 1000px) {
+
+  .projects-cards{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
