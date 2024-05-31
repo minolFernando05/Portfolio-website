@@ -6,7 +6,8 @@
   display: inline-block;
   flex-direction: column;
   height: fit-content;
-  /* overflow: hidden; */
+  overflow: hidden;
+  
 }
 
 /* .card-image{
@@ -18,13 +19,15 @@
 } */
 
 .card-image {
-  height: 50vh; /* Adjust as needed */
-  width: 80%; /* Takes the full width of the container */
+  display: block;
+  
+  width: 100%; /* Takes the full width of the container */
   object-fit: cover; /* Scales the image to cover the container without stretching */
   transition: transform 0.4s;
   animation: ease-in;
   overflow: hidden;
 }
+
 
 .card-image:hover{
   transform: scale(1.1);
@@ -62,5 +65,17 @@
   font-style: normal;
   font-weight: 400;
   line-height: 10px; */
+}
+
+@media(max-width: 500px) {
+
+  .card-title{
+   margin-top: 5%;
+   font-size: 1.5rem;
+  }
+
+  .card-text{
+    font-size: 1.2rem;
+  }
 }
 
