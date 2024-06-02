@@ -41,8 +41,12 @@
 
 .inner-card-textbody:hover{
   text-decoration: underline;
-  cursor: url("./assets/xmark-solid.svg"), auto;
 }
+
+/* .inner-card-textbody:hover{
+  text-decoration: underline;
+  cursor: url("./assets/xmark-solid.svg"), auto;
+} */
 
 
 .card-title{
