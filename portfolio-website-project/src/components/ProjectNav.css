@@ -1,0 +1,10 @@
+.navigation{
+    display: flex;
+    justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+}
+
+.navigation a {
+    color: inherit;
+  }
