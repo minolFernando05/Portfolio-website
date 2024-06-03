@@ -72,6 +72,7 @@ margin: 8rem;
 
   .intro{
     margin:2.5rem;
+    min-height: 100vh;
 }
 
 .intro-text{

@@ -39,6 +39,11 @@
   font-family: "Inter";
 } */
 
+/*removes the underline*/
+.card-container a {
+  text-decoration: none;
+}
+
 .inner-card-textbody:hover{
   text-decoration: underline;
 }
