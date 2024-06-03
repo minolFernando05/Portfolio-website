@@ -1,0 +1,22 @@
+.chatLink{
+    background: #f3f3fa;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.main{
+    font-size: 2.5rem;
+    padding: 0.5rem;
+}
+
+.sub{
+    font-size: 1.2rem;
+    color: #0072f7;
+}
+
+.chatLink a {
+    color: inherit;
+  }

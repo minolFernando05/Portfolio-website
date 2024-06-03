@@ -1,8 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Datapel.css';
-import ProjectsNavigation from '../components/ProjectNav.jsx';
-import footer from '../components/Footer.jsx';
+
+/*Import of end components*/
+import ProjectsNavigation from '../components/projectNav.jsx';
+import ChatLink from '../components/chatlink.jsx';
 
 /*Import of images*/
 import backgroundImg1 from '../assets/datapel_img1.png';
@@ -91,44 +93,13 @@ function DatapelPageDesign() {
             <img src={uiImg} className='section5-image' alt="section5-image"/>
         </div>    
 
-        <div className='navigation'>
-            {/* < Previous   •   Next  > */}
-            <Link to="/food">
-            &lt; 
-            &nbsp; 
-            Previous 
-            </Link>
-            &nbsp;
-            &nbsp; 
-            &#x2022; 
-            &nbsp;
-            &nbsp;
-            <Link to="/food">
-            Next 
-            &nbsp;
-            &gt;
-            </Link>
-        </div>
 
-        {/*
-        < (less than) = &lt;
-        > (greather than) = &gt; 
-        &nbsp; = non-breaking space
-        &#x2022; = bullet point
-        */}
+        <ProjectsNavigation
+            prevLink='/'
+            nextLink='/food'
+        />
 
-        <div className='chatLink'>
-            <div className='main'>
-                Interested in my work?
-            </div>
-            <div className='sub'>
-                <Link to="/food">
-                Let's chat &#8594;
-                </Link>
-            </div>
-        </div>
-        
-        <navigation/>
+        <ChatLink/>
 
     </div>
     </>

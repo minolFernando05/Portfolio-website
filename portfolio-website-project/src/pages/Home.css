@@ -40,7 +40,7 @@
 }
 
 .about-text-sub{
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   line-height: 217%
 }
 
@@ -72,7 +72,6 @@ margin: 8rem;
 
   .intro{
     margin:2.5rem;
-    min-height: 100vh;
 }
 
 .intro-text{
@@ -104,7 +103,7 @@ margin: 8rem;
 }
 
 .about-text-sub{
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 200%
 }
 
