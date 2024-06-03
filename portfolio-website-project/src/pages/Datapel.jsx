@@ -16,22 +16,24 @@ import uiImg from '../assets/datapel_img5.png';
 function DatapelPageDesign() {
   return (
     <>
+ 
+    <img src={backgroundImg1} className='topimage' alt="section1-image"/>
+
+
     <div className='DatapelPage-container'>
 
-        <div className='section1'>
-        <img src={backgroundImg1} className='section1-image' alt="section1-image"/>
-        </div>
 
-        <div className='section2'>
+
+        <div className='section1'>
             <div className='path'>
                 <p><Link to="/">Home</Link> / Projects / Datapel Mobility Assistant</p>
             </div>   
 
-            <div className='sec2-Title'>
+            <div className='sec1-Title'>
                 <p>Enhancing user experience for on-the-go wearhouse workers</p>
             </div>  
 
-            <div className='sec2-Text'>
+            <div className='sec1-Text'>
                 <p>Datapel is an Australian based B2B warehouse management
                     software (WMS) provider with an international clientele
                     of enterprises. Their mobility assistant was designed
@@ -44,10 +46,10 @@ function DatapelPageDesign() {
             </div>
         </div>
 
-        <div className='section3'>
+        <div className='section2'>
             <img src={colourBars} className='section3-image' alt="section3-image"/>
 
-            <div className='sec3-Text'>
+            <div className='sec2-Text'>
                 <p>The colors selected for this project were primarily based on 
                    the existing branding, with additional colors chosen to enhance
                    the user experience. The aim was to provide users with a more
@@ -56,10 +58,10 @@ function DatapelPageDesign() {
             </div>
         </div>
 
-        <div className='section4'>
+        <div className='section3'>
             <img src={fontsImg} className='section4-image' alt="section4-image"/>
 
-            <div className='sec4-Text'>
+            <div className='sec3-Text'>
                 <p>Typography has been a major focus in the UI design of the project. 
                 Space Grotesk has been used as the primary font, selected for its modern
                 and clean appearance. Inter, a versatile font with good legibility,
@@ -71,12 +73,12 @@ function DatapelPageDesign() {
             </div>
         </div>
 
-        <div className='section5'> 
+        <div className='section4'> 
             <img src={screensImg} className='section5-image' alt="section5-image"/>
-            <div className='sec5-Title'>
+            <div className='Title2'>
                 <p>User Interface - Proposed Solution</p>
             </div>
-            <div className='sec5-Text'> 
+            <div className='Text2'> 
                 <p>A clean, minimalistic and user-friendly interface that allows for seamless 
                 navigation through key functions such as checkout and despatch. 
                 Color selection was a major consideration in creating a pleasing user experience,
@@ -88,12 +90,40 @@ function DatapelPageDesign() {
         </div>    
 
         <div className='navigation'>
-            <p> &lt; Previous &#x2022; Next 	&gt;</p>
+            {/* < Previous   •   Next  > */}
+            <Link to="/food">
+            &lt; 
+            &nbsp; 
+            Previous 
+            </Link>
+            &nbsp;
+            &nbsp; 
+            &#x2022; 
+            &nbsp;
+            &nbsp;
+            <Link to="/food">
+            Next 
+            &nbsp;
+            &gt;
+            </Link>
         </div>
 
+        {/*
+        < (less than) = &lt;
+        > (greather than) = &gt; 
+        &nbsp; = non-breaking space
+        &#x2022; = bullet point
+        */}
+
         <div className='chatLink'>
-            <p>Interested in my work?</p>
-            <p>Let's chat &#8594;</p>
+            <div className='main'>
+                Interested in my work?
+            </div>
+            <div className='sub'>
+                <Link to="/food">
+                Let's chat &#8594;
+                </Link>
+            </div>
         </div>
         
 
