@@ -1,6 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Datapel.css';
+import ProjectsNavigation from '../components/ProjectNav.jsx';
+import footer from '../components/Footer.jsx';
 
 /*Import of images*/
 import backgroundImg1 from '../assets/datapel_img1.png';
@@ -26,7 +28,7 @@ function DatapelPageDesign() {
 
         <div className='section1'>
             <div className='path'>
-                <p><Link to="/">Home</Link> / Projects / Datapel Mobility Assistant</p>
+                <Link to="/">Home</Link> / <Link to="/">Projects</Link> / Datapel Mobility Assistant
             </div>   
 
             <div className='sec1-Title'>
@@ -126,6 +128,7 @@ function DatapelPageDesign() {
             </div>
         </div>
         
+        <navigation/>
 
     </div>
     </>

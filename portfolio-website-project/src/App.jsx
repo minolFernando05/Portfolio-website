@@ -1,7 +1,6 @@
 import Header from "./Header.jsx"
 import Footer from "./components/Footer.jsx";
 import Food from "./Food.jsx";
-import Card from "./components/Card.jsx";
 import React from "react";
 import NavBar from "./components/NavBar.jsx";
 import { Route, Routes } from "react-router-dom";
