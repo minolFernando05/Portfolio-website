@@ -1,10 +1,11 @@
 import React from 'react';
 import './Footer.css';
 import navLogo from "../assets/ryan-web-logo2.svg";
-import linkedinLogo from "../assets/linkedin.svg";
-import dribbleLogo from "../assets/Dribble.svg";
-import instagramLogo from "../assets/instagram.svg";
-import twitterLogo from "../assets/twitter.svg";
+import linkedinLogo from "../assets/socialMediaLogos/linkedin.svg";
+import dribbleLogo from "../assets/socialMediaLogos/Dribble.svg";
+import instagramLogo from "../assets/socialMediaLogos/instagram.svg";
+import twitterLogo from "../assets/socialMediaLogos/twitter.svg";
+
 
 function Footer() {
   return (

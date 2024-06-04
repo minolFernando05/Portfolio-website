@@ -4,9 +4,9 @@ import HeroBackground from '../assets/HeroBackground.png';
 import Card from '../components/Card';
 
 /*Import of card images*/
-import cardImage1 from '../assets/card-1-img.png';
-import cardImage2 from '../assets/card-2-img.png';
-import cardImage3 from '../assets/card-3-img.png';
+import cardImage1 from '../assets/cardImages/card-1-img.png';
+import cardImage2 from '../assets/cardImages/card-2-img.png';
+import cardImage3 from '../assets/cardImages/card-3-img.png';
 
 
 function Home() {
@@ -68,6 +68,7 @@ function Home() {
                   imgPath={cardImage3}
                   title="UI/UX Design "
                   description="PLAB"
+                  link={'/plab'}
               />
 
               <Card

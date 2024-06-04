@@ -7,13 +7,11 @@ import ProjectsNavigation from '../components/projectNav.jsx';
 import ChatLink from '../components/chatlink.jsx';
 
 /*Import of images*/
-import backgroundImg1 from '../assets/datapel_img1.png';
-import colourBars from '../assets/datapel_img2.png';
-import fontsImg from '../assets/datapel_img3.png';
-import screensImg from '../assets/datapel_img4.png';
-import uiImg from '../assets/datapel_img5.png';
-
-
+import backgroundImg1 from '../assets/datapelImages/datapel_img1.png';
+import colourBars from '../assets/datapelImages/datapel_img2.png';
+import fontsImg from '../assets/datapelImages/datapel_img3.png';
+import screensImg from '../assets/datapelImages/datapel_img4.png';
+import uiImg from '../assets/datapelImages/datapel_img5.png';
 
 
 

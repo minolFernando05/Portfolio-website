@@ -180,7 +180,7 @@ function ShitPapersDesign() {
 
         <ProjectsNavigation
             prevLink='/datapel'
-            nextLink='/food'
+            nextLink='/plab'
         />
 
         <ChatLink/>
