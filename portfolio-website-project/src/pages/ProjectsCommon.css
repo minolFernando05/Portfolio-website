@@ -23,7 +23,8 @@ all four margins are 10px
 Note: Negative values are allowed.*/
 
 
-.topimage,.section3-image,.section4-image,.section5-image {
+.topimage,.section2-image,.section3-image,.section4-image,
+.section5-image,.section6-image,.section7-image,.section8-image {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -66,7 +67,7 @@ Note: Negative values are allowed.*/
     line-height: 180%;
 }
 
-.sec2-Text,.sec3-Text{
+.sec2-Text,.sec3-Text,.sec4-Text,.sec5-Text,.sec6-Text{
     font-size: 1.2rem;
     line-height: 180%;
     margin: 2rem 12rem 6rem;
@@ -96,16 +97,6 @@ Note: Negative values are allowed.*/
 /*tablet*/
 @media(max-width: 1500px) {
 
-    .topimage{
-        width: 100%;
-        height: 100%;
-    }
-
-    .section3-image,.section4-image,.section5-image {
-        width: 100%;
-        height: 100%;
-    }
-
     .DatapelPage-container{
         margin-left: 4rem;
         margin-right: 4rem;
@@ -121,7 +112,7 @@ Note: Negative values are allowed.*/
         margin-bottom: 2rem;
     }
     
-    .sec2-Text,.sec3-Text{
+    .sec2-Text,.sec3-Text,.sec4-Text,.sec5-Text,.sec6-Text{
         margin-left: 4rem;
         margin-right: 4rem;
     }
@@ -145,11 +136,6 @@ Note: Negative values are allowed.*/
         height: 45vh;
     }
 
-    .section3-image,.section4-image,.section5-image {
-        width: 100%;
-        height: 100%;
-    }
-
     .DatapelPage-container{
         margin: 3rem 1rem 5rem;
     }  
@@ -168,7 +154,7 @@ Note: Negative values are allowed.*/
         line-height: 180%;
     }
     
-    .sec2-Text,.sec3-Text{
+    .sec2-Text,.sec3-Text,.sec4-Text,.sec5-Text,.sec6-Text{
         font-size: 1.1rem;
         line-height: 180%;
         margin: 1rem 1rem 4rem;

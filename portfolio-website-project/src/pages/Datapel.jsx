@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './Datapel.css';
+import './ProjectsCommon.css';
 
 /*Import of end components*/
 import ProjectsNavigation from '../components/projectNav.jsx';
@@ -51,7 +51,7 @@ function DatapelPageDesign() {
         </div>
 
         <div className='section2'>
-            <img src={colourBars} className='section3-image' alt="section3-image"/>
+            <img src={colourBars} className='section2-image' alt="section2-image"/>
 
             <div className='sec2-Text'>
                 <p>The colors selected for this project were primarily based on 
@@ -63,7 +63,7 @@ function DatapelPageDesign() {
         </div>
 
         <div className='section3'>
-            <img src={fontsImg} className='section4-image' alt="section4-image"/>
+            <img src={fontsImg} className='section3-image' alt="section3-image"/>
 
             <div className='sec3-Text'>
                 <p>Typography has been a major focus in the UI design of the project. 
@@ -78,7 +78,7 @@ function DatapelPageDesign() {
         </div>
 
         <div className='section4'> 
-            <img src={screensImg} className='section5-image' alt="section5-image"/>
+            <img src={screensImg} className='section4-image' alt="section4-image"/>
             <div className='Title2'>
                 <p>User Interface - Proposed Solution</p>
             </div>
@@ -96,7 +96,7 @@ function DatapelPageDesign() {
 
         <ProjectsNavigation
             prevLink='/'
-            nextLink='/food'
+            nextLink='/shitPapers'
         />
 
         <ChatLink/>

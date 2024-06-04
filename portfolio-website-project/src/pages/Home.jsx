@@ -61,6 +61,7 @@ function Home() {
                   imgPath={cardImage2}
                   title="UI/UX Design  & Branding"
                   description="ShitPapers"
+                  link={'/shitPapers'}
               />
 
               <Card
