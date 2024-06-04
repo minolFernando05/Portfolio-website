@@ -1,8 +1,12 @@
 
 
 .intro{
-    margin:8rem;
+    margin: 3rem 8rem 8rem 8rem;
 }
+/* top:    3 margin */
+/* right:  8 margin  */
+/* bottom: 8 margin */
+/* left:   8 margin  */
 
 .intro-text{
     font-size: 4rem;

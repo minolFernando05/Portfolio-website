@@ -1,3 +1,27 @@
+/*If the margin property has four values:
+
+margin: 10px 5px 15px 20px;
+top margin is 10px
+right margin is 5px
+bottom margin is 15px
+left margin is 20px
+If the margin property has three values:
+
+margin: 10px 5px 15px;
+top margin is 10px
+right and left margins are 5px
+bottom margin is 15px
+If the margin property has two values:
+
+margin: 10px 5px;
+top and bottom margins are 10px
+right and left margins are 5px
+If the margin property has one value:
+
+margin: 10px;
+all four margins are 10px
+Note: Negative values are allowed.*/
+
 
 .topimage,.section3-image,.section4-image,.section5-image {
   width: 100%;
@@ -7,25 +31,12 @@
 }
 
 .DatapelPage-container{
-    margin-left: 8rem;
-    margin-right: 8rem;
-    margin-bottom: 5rem;
-}
-
-.section1 {
-  display: flex;
-  margin-top: 6rem;
+    margin: 6rem 8rem;
 }
 
 /*removes the underline*/
 .DatapelPage-container a {
     text-decoration: none;
-}
-
-.section1{
-    display: flex;
-    flex-direction: column;
-
 }
 
 .path{
@@ -40,10 +51,9 @@
 }
 
 .section1{
-    margin-left: 12rem;
-    margin-right: 12rem;
-    margin-top: 4rem;
-    margin-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    margin: 4rem 12rem;
 }
 
 .sec1-Title{
@@ -59,10 +69,7 @@
 .sec2-Text,.sec3-Text{
     font-size: 1.2rem;
     line-height: 180%;
-    margin-left: 12rem;
-    margin-right: 12rem;
-    margin-top: 2rem;
-    margin-bottom: 6rem;
+    margin: 2rem 12rem 6rem;
   }
 
 /*----style 2----*/
@@ -85,8 +92,108 @@
 
 /*---------------*/
 
+/*-------------------------------------------------------------------------*/
+/*tablet*/
+@media(max-width: 1500px) {
 
+    .topimage{
+        width: 100%;
+        height: 100%;
+    }
 
+    .section3-image,.section4-image,.section5-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .DatapelPage-container{
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }  
+    
+    .section1{
+        margin-left: 5rem;
+        margin-right: 5rem;
+    }
+    
+    .sec1-Title{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .sec2-Text,.sec3-Text{
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+    /*----spacing----*/
+    .Title2,.Text2{
+        margin-left: 4rem;
+        margin-right: 4rem;
+    }
+
+    /*---------------*/
+
+}
+
+/*-------------------------------------------------------------------------*/
+/*For mobile and tablet*/
+@media(max-width: 1000px) {
+
+    .topimage{
+        width: 100%;
+        height: 45vh;
+    }
+
+    .section3-image,.section4-image,.section5-image {
+        width: 100%;
+        height: 100%;
+    }
+
+    .DatapelPage-container{
+        margin: 3rem 1rem 5rem;
+    }  
+
+    .section1{
+        margin: 2rem 1rem 4rem;
+    }
+    
+    .sec1-Title{
+        font-size: 2rem;
+        margin-bottom: 2rem;
+    }
+    
+    .sec1-Text{
+        font-size: 1.2rem;
+        line-height: 180%;
+    }
+    
+    .sec2-Text,.sec3-Text{
+        font-size: 1.1rem;
+        line-height: 180%;
+        margin: 1rem 1rem 4rem;
+    }
+
+    /*----style 2----*/
+    .Title2{
+        font-size: 1.8rem;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
+
+    .Text2{
+        font-size: 1.2rem;
+        line-height: 180%;
+        margin-bottom: 4rem;
+    }
+    /*----spacing----*/
+    .Title2,.Text2{
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    /*---------------*/
+}
 
 
 

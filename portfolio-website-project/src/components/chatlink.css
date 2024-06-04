@@ -20,3 +20,17 @@
 .chatLink a {
     color: inherit;
   }
+
+
+@media(max-width: 1000px) {
+    .chatLink{
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+    }
+    .main{
+        font-size: 1.8rem;
+    }
+    .sub{
+        font-size: 1rem;
+    }
+}
