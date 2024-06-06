@@ -1,25 +1,25 @@
+// ProjectsPageTemplate.jsx
 import React from "react";
 import { Link } from "react-router-dom";
-
-/*Import of end components*/
+import SectionComponent from "../components/SectionComponent";
 import ProjectsNavigation from "../components/projectNav.jsx";
 import ChatLink from "../components/chatlink.jsx";
 import "./ProjectsPageTemplate.css";
 
-
 const ProjectsPageTemplate = ({
-    backgroundImg1,
-    projectName,
-    sec1Title,sec1Text1,sec1Text2,sec1Text3,
-    Img2,sec2Text,sec2_Title2,sec2_Text2,
-    Img3,sec3Text,sec3_Title2,sec3_Text2,
-    Img4,sec4Text,sec4_Title2,sec4_Text2,
-    Img5,sec5Text,sec5_Title2,sec5_Text2,
-    Img6,sec6Text,sec6_Title2,sec6_Text2,
-    Img7,sec7Text,sec7_Title2,sec7_Text2,
-    Img8,sec8Text,sec8_Title2,sec8_Text2,
-
-    prevPage,nextPage,
+  backgroundImg1,
+  projectName,
+  sec1Title,sec1Text1,sec1Text2,sec1Text3,
+  Img2,sec2Text,sec2_Title2,sec2_Text2,
+  Img3,sec3Text,sec3_Title2,sec3_Text2,
+  Img4,sec4Text,sec4_Title2,sec4_Text2,
+  Img5,sec5Text,sec5_Title2,sec5_Text2,
+  Img6,sec6Text,sec6_Title2,sec6_Text2,
+  Img7,sec7Text,sec7_Title2,sec7_Text2,
+  Img8,sec8Text,sec8_Title2,sec8_Text2,
+  Img9,sec9Text,sec9_Title2,sec9_Text2,
+  prevPage,
+  nextPage
 }) => {
   return (
     <>
@@ -43,150 +43,109 @@ const ProjectsPageTemplate = ({
           </div>
         </div>
 
-        <div className="section2">
-            {Img2 && (
-                    <img src={Img2} className="section2-image" alt="section2-image" />
-                )}
+        <SectionComponent
+          imgSrc={Img2}
+          imgAlt="section2-image"
+          text={sec2Text}
+          title2={sec2_Title2}
+          text2={sec2_Text2}
+          sectionClass="section2"
+          imgClass="section2-image"
+          textClass="sec2-Text"
+          titleClass="Title2"
+          text2Class="Text2"
+        />
 
-            {sec2Text && (
-            <div className="sec2-Text">
-                <p>{sec2Text}</p>
-            </div>
-            )}
+        <SectionComponent
+          imgSrc={Img3}
+          imgAlt="section3-image"
+          text={sec3Text}
+          title2={sec3_Title2}
+          text2={sec3_Text2}
+          sectionClass="section3"
+          imgClass="section3-image"
+          textClass="sec3-Text"
+          titleClass="Title2"
+          text2Class="Text2"
+        />
 
-            {sec2_Title2 && (
-            <div className="Title2">
-                <p>{sec2_Title2}</p>
-            </div>
-            )}
+        <SectionComponent
+          imgSrc={Img4}
+          imgAlt="section4-image"
+          text={sec4Text}
+          title2={sec4_Title2}
+          text2={sec4_Text2}
+          sectionClass="section4"
+          imgClass="section4-image"
+          textClass="sec4-Text"
+          titleClass="Title2"
+          text2Class="Text2"
+        />
 
-            {sec2_Text2 && (
-            <div className="Text2">
-                <p>{sec2_Text2}</p>
-            </div>
-            )}
-        </div>
+        <SectionComponent
+          imgSrc={Img5}
+          imgAlt="section5-image"
+          text={sec5Text}
+          title2={sec5_Title2}
+          text2={sec5_Text2}
+          sectionClass="section5"
+          imgClass="section5-image"
+          textClass="sec5-Text"
+          titleClass="Title2"
+          text2Class="Text2"
+        />
 
-        <div className="section3">
-            {Img3 && (
-                    <img src={Img3} className="section3-image" alt="section3-image" />
-                )}
+        <SectionComponent
+          imgSrc={Img6}
+          imgAlt="section6-image"
+          text={sec6Text}
+          title2={sec6_Title2}
+          text2={sec6_Text2}
+          sectionClass="section6"
+          imgClass="section6-image"
+          textClass="sec6-Text"
+          titleClass="Title2"
+          text2Class="Text2"
+        />
 
-            {sec3Text && (
-            <div className="sec3-Text">
-                <p>{sec3Text}</p>
-            </div>
-            )}
+        <SectionComponent
+          imgSrc={Img7}
+          imgAlt="section7-image"
+          text={sec7Text}
+          title2={sec7_Title2}
+          text2={sec7_Text2}
+          sectionClass="section7"
+          imgClass="section7-image"
+          textClass="sec7-Text"
+          titleClass="Title2"
+          text2Class="Text2"
+        />
 
-            {sec3_Title2 && (
-            <div className="Title2">
-                <p>{sec3_Title2}</p>
-            </div>
-            )}
+        <SectionComponent
+          imgSrc={Img8}
+          imgAlt="section8-image"
+          text={sec8Text}
+          title2={sec8_Title2}
+          text2={sec8_Text2}
+          sectionClass="section8"
+          imgClass="section8-image"
+          textClass="sec8-Text"
+          titleClass="Title2"
+          text2Class="Text2"
+        />
 
-            {sec3_Text2 && (
-            <div className="Text2">
-                <p>{sec3_Text2}</p>
-            </div>
-            )}
-        </div>
-
-        <div className="section4">
-            {Img4 && (
-                <img src={Img4} className="section4-image" alt="section4-image" />
-            )}
-
-          <div className="sec4-Text">
-            <p>{sec4Text}</p>
-          </div>
-
-          <div className="Title2">
-            <p>{sec4_Title2}</p>
-          </div>
-
-          <div className="Text2">
-            <p>{sec4_Text2}</p>
-          </div>
-
-        </div>
-
-        <div className="section5">
-          {Img5 && (
-            <img src={Img5} className="section5-image" alt="section5-image" />
-          )}
-
-          <div className="sec5-Text">
-            <p>{sec5Text}</p>
-          </div>
-
-          <div className="Title2">
-            <p>{sec5_Title2}</p>
-          </div>
-
-          <div className="Text2">
-            <p>{sec5_Text2}</p>
-          </div>
-
-        </div>
-
-        <div className="section6">
-          {Img6 && (
-            <img src={Img6} className="section6-image" alt="section6-image" />
-          )}
-
-          <div className="sec6-Text">
-            <p>{sec6Text}</p>
-          </div>
-
-          <div className="Title2">
-            <p>{sec6_Title2}</p>
-          </div>
-
-          <div className="Text2">
-            <p>{sec6_Text2}</p>
-          </div>
-
-        </div>
-
-        <div className="section7">
-
-          <div className="sec7-Text">
-            <p>{sec7Text}</p>
-          </div>
-
-          <div className="Title2">
-            <p>{sec7_Title2}</p>
-          </div>
-
-          <div className="Text2">
-            <p>{sec7_Text2}</p>
-          </div>
-
-          {Img7 && (
-            <img src={Img7} className="section7-image" alt="section7-image" />
-          )}
-
-        </div>
-
-        <div className="section8">
-
-          <div className="sec8-Text">
-            <p>{sec8Text}</p>
-          </div>
-
-          <div className="Title2">
-            <p>{sec8_Title2}</p>
-          </div>
-
-          <div className="Text2">
-            <p>{sec8_Text2}</p>
-          </div>
-
-          {Img8 && (
-            <img src={Img8} className="section8-image" alt="section8-image" />
-          )}
-
-        </div>
+        <SectionComponent
+            imgSrc={Img9}
+            imgAlt="section9-image"
+            text={sec9Text}
+            title2={sec9_Title2}
+            text2={sec9_Text2}
+            sectionClass="section9"
+            imgClass="section9-image"
+            textClass="sec9-Text"
+            titleClass="Title2"
+            text2Class="Text2"
+        />
 
         <ProjectsNavigation prevLink={prevPage} nextLink={nextPage} />
         <ChatLink />
@@ -195,33 +154,15 @@ const ProjectsPageTemplate = ({
   );
 };
 
-// conditional rendering of Img to use default value if not provided
 ProjectsPageTemplate.defaultProps = {
-    Img4: null,
-    sec4Text: null,
-    sec4_Title2: null,
-    sec4_Text2: null,
-
-    Img5: null,
-    sec5Text: null,
-    sec5_Title2: null,
-    sec5_Text2: null,
-
-    Img6: null,
-    sec6Text: null,
-    sec6_Title2: null,
-    sec6_Text2: null,
-
-    Img7: null,
-    sec7Text: null,
-    sec7_Title2: null,
-    sec7_Text2: null,
-
-    Img8: null,
-    sec8Text: null,
-    sec8_Title2: null,
-    sec8_Text2: null,
-
-  };
+    Img2: null,sec2Text: '',sec2_Title2: '',sec2_Text2: '',
+    Img3: null,sec3Text: '',sec3_Title2: '',sec3_Text2: '',
+    Img4: null,sec4Text: '',sec4_Title2: '',sec4_Text2: '',
+    Img5: null,sec5Text: '',sec5_Title2: '',sec5_Text2: '',
+    Img6: null,sec6Text: '',sec6_Title2: '',sec6_Text2: '',
+    Img7: null,sec7Text: '',sec7_Title2: '',sec7_Text2: '',
+    Img8: null,sec8Text: '',sec8_Title2: '',sec8_Text2: '',
+    Img9: null,sec9Text: '',sec9_Title2: '',sec9_Text2: '',
+};
 
 export default ProjectsPageTemplate;

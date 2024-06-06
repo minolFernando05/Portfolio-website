@@ -78,7 +78,6 @@ function ShitPapersDesign() {
                     across various touchpoints while also adapting to different 
                     design contexts."
 
-            Img7={uiComponents}
             sec7_Title2="User Interface - Proposed Solution"
             sec7_Text2="The main objective of building the e-commerce platform was to provide
                     users with a seamless and hassle-free customer journey. The platform
@@ -88,7 +87,7 @@ function ShitPapersDesign() {
                     enables users to shop for products and make purchases with ease and
                     confidence."
 
-            Img8={homePageDesign}
+            Img8={uiComponents}
             sec8_Title2="Homepage"
             sec8_Text2="The Shopify homepage was designed with the customer at the 
                     center, with a clear focus on showcasing the brand's eco-friendly 
@@ -98,6 +97,8 @@ function ShitPapersDesign() {
                     eco-friendliness. By providing an engaging and informative 
                     browsing experience, the homepage effectively communicates the 
                     brand's values and unique offerings to potential customers."
+
+            Img9={homePageDesign}
 
 
             prevPage={"/datapel"}

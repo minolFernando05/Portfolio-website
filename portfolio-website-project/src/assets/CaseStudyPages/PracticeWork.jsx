@@ -17,9 +17,13 @@ function PracticeWorkDesign() {
           projectName="Practice Work"
 
           sec1Title="Few of the practice work"
-          sec1Text1="CadburyChat is a delightful and immersive chat application
-                    inspired by the captivating world of Cadbury chocolates. It brings
-                    together."
+          sec1Text1="These are the projects I completed in my leisure time to 
+                  enhance my skills as a UI/UX designer. Each project was an 
+                  opportunity to experiment with new design techniques, refine
+                  my creative process, and stay updated with the latest 
+                  trends and best practices in the industry. By challenging
+                  myself with diverse and complex design problems, I was able 
+                  to grow both technically and creatively."
 
           Img2={img2}
           sec2_Title2="CadburyChat, Connecting Chocoholics Around the World"

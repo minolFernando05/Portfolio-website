@@ -4,6 +4,7 @@ import Food from "./Food.jsx";
 import React from "react";
 import NavBar from "./components/NavBar.jsx";
 import { Route, Routes } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop.jsx";
 
 
 import Home from './pages/Home';
@@ -13,11 +14,11 @@ import Plab from './assets/CaseStudyPages/Plab.jsx';
 import PracticeWork from "./assets/CaseStudyPages/PracticeWork.jsx";
 import ProjectsPage from "./pages/ProjectsPage.jsx";
 
-import TestPage from "./assets/CaseStudyPages/CommonPageTest.jsx";
 
 function App() {
     return(
     <>
+    <ScrollToTop />
     <NavBar/>
     <Routes>
         <Route path="/" element={<Home/>}/>
@@ -28,7 +29,6 @@ function App() {
         <Route path="/practiceWork" element={<PracticeWork/>}/>
         <Route path="/projectsPage" element={<ProjectsPage/>}/>
 
-        <Route path="/testPage" element={<TestPage/>}/>
 
         <Route/>
     </Routes>
