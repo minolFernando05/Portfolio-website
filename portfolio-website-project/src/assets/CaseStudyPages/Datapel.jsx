@@ -1,18 +1,16 @@
 import React from "react";
-import ProjectsPageTemplate from "../components/ProjectsPageTemplate";
+import ProjectsPageTemplate from "../../components/ProjectsPageTemplate";
 
-/*Import CSS*/
-import "../pages/ProjectsCommon.css";
 
 /*Import of images*/
-import backgroundImg1 from '../assets/datapelImages/datapel_img1.png';
-import colourBars from '../assets/datapelImages/datapel_img2.png';
-import fontsImg from '../assets/datapelImages/datapel_img3.png';
-import screensImg from '../assets/datapelImages/datapel_img4.png';
-import uiImg from '../assets/datapelImages/datapel_img5.png';
+import backgroundImg1 from '../datapelImages/datapel_img1.png';
+import colourBars from '../datapelImages/datapel_img2.png';
+import fontsImg from '../datapelImages/datapel_img3.png';
+import screensImg from '../datapelImages/datapel_img4.png';
+import uiImg from '../datapelImages/datapel_img5.png';
 
 
-const Datapel = () => {
+function Datapel() {
   return (
     <>
       <ProjectsPageTemplate

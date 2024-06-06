@@ -1,20 +1,16 @@
 import React from 'react';
-import ProjectsPageTemplate from "../components/ProjectsPageTemplate";
+import ProjectsPageTemplate from "../../components/ProjectsPageTemplate";
 
-/*Import CSS*/
-import "../pages/ProjectsCommon.css";
 
 /*Import of images*/
-import backgroundImg1 from '../assets/shitPapersImages/shitpapers_img1.png';
-import brandingImg from '../assets/shitPapersImages/shitpapers_img2.png';
-import brandingLogos from '../assets/shitPapersImages/shitpapers_img3.png';
-import fontsImages from '../assets/shitPapersImages/shitpapers_img4.png';
-import colourBars from '../assets/shitPapersImages/shitpapers_img5.png';
-import logoAlignment from '../assets/shitPapersImages/shitpapers_img6.png';
-import uiComponents from '../assets/shitPapersImages/shitpapers_img7.png';
-import homePageDesign from '../assets/shitPapersImages/shitpapers_img8.png';
-
-
+import backgroundImg1 from '../shitPapersImages/shitpapers_img1.png';
+import brandingImg from '../shitPapersImages/shitpapers_img2.png';
+import brandingLogos from '../shitPapersImages/shitpapers_img3.png';
+import fontsImages from '../shitPapersImages/shitpapers_img4.png';
+import colourBars from '../shitPapersImages/shitpapers_img5.png';
+import logoAlignment from '../shitPapersImages/shitpapers_img6.png';
+import uiComponents from '../shitPapersImages/shitpapers_img7.png';
+import homePageDesign from '../shitPapersImages/shitpapers_img8.png';
 
 
 

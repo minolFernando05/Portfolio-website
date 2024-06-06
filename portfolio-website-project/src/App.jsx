@@ -7,13 +7,13 @@ import { Route, Routes } from "react-router-dom";
 
 
 import Home from './pages/Home';
-import Datapel from './pages/Datapel';
-import ShitPapers from './pages/ShitPapers';
-import Plab from './pages/Plab.jsx';
-import PracticeWork from "./pages/PracticeWork.jsx";
+import Datapel from './assets/CaseStudyPages/Datapel.jsx';
+import ShitPapers from './assets/CaseStudyPages/ShitPapers.jsx';
+import Plab from './assets/CaseStudyPages/Plab.jsx';
+import PracticeWork from "./assets/CaseStudyPages/PracticeWork.jsx";
 import ProjectsPage from "./pages/ProjectsPage.jsx";
 
-import TestPage from "./pages/CommonPageTest.jsx";
+import TestPage from "./assets/CaseStudyPages/CommonPageTest.jsx";
 
 function App() {
     return(

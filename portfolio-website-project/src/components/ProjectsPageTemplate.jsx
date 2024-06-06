@@ -4,15 +4,16 @@ import { Link } from "react-router-dom";
 /*Import of end components*/
 import ProjectsNavigation from "../components/projectNav.jsx";
 import ChatLink from "../components/chatlink.jsx";
-import "../pages/ProjectsCommon.css";
+import "./ProjectsPageTemplate.css";
+
 
 const ProjectsPageTemplate = ({
     backgroundImg1,
     projectName,
     sec1Title,sec1Text1,sec1Text2,sec1Text3,
-    Img2,sec2Text,
-    Img3,sec3Text,
-    Img4,sec4Text,
+    Img2,sec2Text,sec2_Title2,sec2_Text2,
+    Img3,sec3Text,sec3_Title2,sec3_Text2,
+    Img4,sec4Text,sec4_Title2,sec4_Text2,
     Img5,sec5Text,sec5_Title2,sec5_Text2,
     Img6,sec6Text,sec6_Title2,sec6_Text2,
     Img7,sec7Text,sec7_Title2,sec7_Text2,
@@ -43,27 +44,70 @@ const ProjectsPageTemplate = ({
         </div>
 
         <div className="section2">
-          <img src={Img2} className="section2-image" alt="section2-image" />
+            {Img2 && (
+                    <img src={Img2} className="section2-image" alt="section2-image" />
+                )}
 
-          <div className="sec2-Text">
-            <p>{sec2Text}</p>
-          </div>
+            {sec2Text && (
+            <div className="sec2-Text">
+                <p>{sec2Text}</p>
+            </div>
+            )}
+
+            {sec2_Title2 && (
+            <div className="Title2">
+                <p>{sec2_Title2}</p>
+            </div>
+            )}
+
+            {sec2_Text2 && (
+            <div className="Text2">
+                <p>{sec2_Text2}</p>
+            </div>
+            )}
         </div>
 
         <div className="section3">
-          <img src={Img3} className="section3-image" alt="section3-image" />
+            {Img3 && (
+                    <img src={Img3} className="section3-image" alt="section3-image" />
+                )}
 
-          <div className="sec3-Text">
-            <p>{sec3Text}</p>
-          </div>
+            {sec3Text && (
+            <div className="sec3-Text">
+                <p>{sec3Text}</p>
+            </div>
+            )}
+
+            {sec3_Title2 && (
+            <div className="Title2">
+                <p>{sec3_Title2}</p>
+            </div>
+            )}
+
+            {sec3_Text2 && (
+            <div className="Text2">
+                <p>{sec3_Text2}</p>
+            </div>
+            )}
         </div>
 
         <div className="section4">
-          <img src={Img4} className="section4-image" alt="section4-image" />
+            {Img4 && (
+                <img src={Img4} className="section4-image" alt="section4-image" />
+            )}
 
           <div className="sec4-Text">
             <p>{sec4Text}</p>
           </div>
+
+          <div className="Title2">
+            <p>{sec4_Title2}</p>
+          </div>
+
+          <div className="Text2">
+            <p>{sec4_Text2}</p>
+          </div>
+
         </div>
 
         <div className="section5">
@@ -153,7 +197,31 @@ const ProjectsPageTemplate = ({
 
 // conditional rendering of Img to use default value if not provided
 ProjectsPageTemplate.defaultProps = {
+    Img4: null,
+    sec4Text: null,
+    sec4_Title2: null,
+    sec4_Text2: null,
+
     Img5: null,
+    sec5Text: null,
+    sec5_Title2: null,
+    sec5_Text2: null,
+
+    Img6: null,
+    sec6Text: null,
+    sec6_Title2: null,
+    sec6_Text2: null,
+
+    Img7: null,
+    sec7Text: null,
+    sec7_Title2: null,
+    sec7_Text2: null,
+
+    Img8: null,
+    sec8Text: null,
+    sec8_Title2: null,
+    sec8_Text2: null,
+
   };
 
 export default ProjectsPageTemplate;
