@@ -18,12 +18,10 @@ function PlabPageDesign() {
   return (
     <>
  
-    <img src={backgroundImg1} className='topimage' alt="section1-image"/>
+    <img src={backgroundImg1} className='topimage' alt="topimage"/>
 
 
-    <div className='DatapelPage-container'>
-
-
+    <div className='Page-container'>
 
         <div className='section1'>
             <div className='path'>
@@ -103,7 +101,7 @@ function PlabPageDesign() {
 
         <ProjectsNavigation
             prevLink='/shitpapers'
-            nextLink='/shitPapers'
+            nextLink='/practiceWork'
         />
 
         <ChatLink/>

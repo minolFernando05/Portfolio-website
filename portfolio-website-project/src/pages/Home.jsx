@@ -7,6 +7,7 @@ import Card from '../components/Card';
 import cardImage1 from '../assets/cardImages/card-1-img.png';
 import cardImage2 from '../assets/cardImages/card-2-img.png';
 import cardImage3 from '../assets/cardImages/card-3-img.png';
+import cardImage4 from '../assets/cardImages/card-4-img.png';
 
 
 function Home() {
@@ -59,7 +60,7 @@ function Home() {
 
               <Card
                   imgPath={cardImage2}
-                  title="UI/UX Design  & Branding"
+                  title="UI/UX Design & Branding"
                   description="ShitPapers"
                   link={'/shitPapers'}
               />
@@ -72,9 +73,10 @@ function Home() {
               />
 
               <Card
-                  imgPath={cardImage2}
-                  title="UI/UX Design  & Branding"
-                  description="ShitPapers"
+                  imgPath={cardImage4}
+                  title="UI/UX Design & Branding"
+                  description="Practice Work"
+                  link={'/practiceWork'}
               />
 
           </div>
