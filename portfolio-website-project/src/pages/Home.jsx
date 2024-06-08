@@ -1,7 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import './Home.css';
 import HeroBackground from '../assets/HeroBackground.png';
 import Card from '../components/Card';
+
 
 /*Import of card images*/
 import cardImage1 from '../assets/cardImages/card-1-img.png';
@@ -17,7 +20,7 @@ function Home() {
 
       <div className='intro'>
           <div className='intro-text'>
-              <p>Hello, I am a <b>UI/UX designer</b> based off Colombo, Sri Lanka.</p>
+              <h1 class="heading">Hello, I am a <b>UI/UX designer</b> based off Colombo, Sri Lanka.</h1>
           </div>
           <img src={HeroBackground} className='intro-image' alt="hero-background"/>
       </div>
@@ -25,7 +28,7 @@ function Home() {
 
       <div className='about'>
           <div className='about-title'>
-              <p>About Me</p>
+              <h2  class="heading2">About Me</h2>
           </div>
           <div className='about-text'>
               <div className='about-text-main'>
@@ -48,7 +51,7 @@ function Home() {
 
       <div className='projects'>
           <div className='projects-title'>
-              <p>Projects</p>
+              <h2  class="heading2">Projects</h2>
           </div>
           <div className='projects-cards'>
               <Card
@@ -78,6 +81,13 @@ function Home() {
                   description="Practice Work"
                   link={'/practiceWork'}
               />
+
+            {/* <div className='viewMore_card'>
+                <Link to="/projectsPage">
+                View More {" "}
+                <img src={arrow} className="arrow" alt="arrow" />
+                </Link>
+            </div> */}
 
           </div>
       </div>

@@ -1,12 +1,20 @@
-import Header from "./Header.jsx"
-import Footer from "./components/Footer.jsx";
-import Food from "./Food.jsx";
 import React from "react";
-import NavBar from "./components/NavBar.jsx";
 import { Route, Routes } from "react-router-dom";
+
+// Components
+import NavBar from "./components/NavBar.jsx";
+import Footer from "./components/Footer.jsx";
+
+
+import Header from "./Header.jsx"
+import Food from "./Food.jsx";
+
+
+
+//Scrool and transition effects
 import ScrollToTop from "./components/ScrollToTop.jsx";
 
-
+//case studies Pages
 import Home from './pages/Home';
 import Datapel from './assets/CaseStudyPages/Datapel.jsx';
 import ShitPapers from './assets/CaseStudyPages/ShitPapers.jsx';
@@ -28,9 +36,6 @@ function App() {
         <Route path="/plab" element={<Plab/>}/>
         <Route path="/practiceWork" element={<PracticeWork/>}/>
         <Route path="/projectsPage" element={<ProjectsPage/>}/>
-
-
-        <Route/>
     </Routes>
     <Footer/>
     </>

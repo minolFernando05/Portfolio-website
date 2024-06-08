@@ -22,6 +22,42 @@ margin: 10px;
 all four margins are 10px
 Note: Negative values are allowed.*/
 
+@keyframes jumpIn_2 {
+    0% {
+      opacity: 0;
+      transform: translateY(10%);
+    }
+    50% {
+      opacity: 1;
+      transform: translateY(-1%);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  .ProjectsPage-container{
+    animation: jumpIn_2 1s ease-out;
+  }
+
+/*---------------------Scroll animation----------------------*/
+@keyframes appear {
+  from {
+    opacity: 0;
+    scale: 0.6;
+  }
+  to {
+    opacity: 1;
+    scale: 1;
+  }
+}
+
+.section1,.section2,.section3,.section4,.section5,
+.section6,.section7,.section8,.section9{
+  animation: appear 5s linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30% ;
+}
 
 .topimage,.section1-image,.section2-image,.section3-image,.section4-image,
 .section5-image,.section6-image,.section7-image,.section8-image,.section9-image {
@@ -31,12 +67,14 @@ Note: Negative values are allowed.*/
   object-position: center;
 }
 
-.Page-container{
+/*-------------------------------------------------------------*/
+
+.content-container{
     margin: 6rem 8rem;
 }
 
 /*removes the underline*/
-.Page-container a {
+.content-container a {
     text-decoration: none;
 }
 
@@ -98,7 +136,7 @@ Note: Negative values are allowed.*/
 /*tablet*/
 @media screen and (max-width: 1500px) {
 
-    .Page-container{
+    .content-container{
         margin-left: 4rem;
         margin-right: 4rem;
     }  
@@ -138,7 +176,7 @@ Note: Negative values are allowed.*/
         height: 45vh;
     }
 
-    .Page-container{
+    .content-container{
         margin: 3rem 1rem 5rem;
     }  
 
@@ -152,13 +190,13 @@ Note: Negative values are allowed.*/
     }
     
     .sec1-Text{
-        font-size: 1.2rem;
+        font-size: 1rem;
         line-height: 180%;
     }
     
     .sec2-Text,.sec3-Text,.sec4-Text,.sec5-Text,
     .sec6-Text,.sec7-Text,.sec8-Text,.sec9-Text{
-        font-size: 1.1rem;
+        font-size: 1rem;
         line-height: 180%;
         margin: 1rem 1rem 4rem;
     }
@@ -171,7 +209,7 @@ Note: Negative values are allowed.*/
     }
 
     .Text2{
-        font-size: 1.2rem;
+        font-size: 1rem;
         line-height: 180%;
         margin-bottom: 4rem;
     }

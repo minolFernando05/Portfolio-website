@@ -1,3 +1,26 @@
+/* .HomePage-container{
+    margin-left: 2rem;
+    margin-right: 2rem;
+} */
+
+
+@keyframes jumpIn {
+  0% {
+    opacity: 0;
+    transform: translateY(10%);
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(-2%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.HomePage-container{
+  animation: jumpIn 0.8s ease-out;
+}
 
 
 .intro{
@@ -9,8 +32,12 @@
 /* left:   8 margin  */
 
 .intro-text{
-    font-size: 4rem;
+    font-size: 1.8rem;
     margin-bottom: 3rem;
+}
+
+.heading{
+  font-weight: normal;
 }
 
 .intro-image {
@@ -31,9 +58,13 @@
   margin-right: 8rem;
 }
 
+.heading2{
+  font-weight: 450;
+}
+
 .about-title{
   display: flex;
-  font-size: 2.5rem;
+  font-size: 1.8rem;
   white-space: nowrap;
   padding-right: 6rem;
 }
@@ -70,6 +101,26 @@ margin: 8rem;
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
+/* .viewMore_card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  transition: transform 0.4s;
+  animation: ease-in;
+}
+
+
+.viewMore_card a{
+  text-decoration: none;
+  color: inherit;
+}
+
+.viewMore_card:hover{
+  transform: scale(1.1);
+} */
+
 
 /*-------------------------------------------------------------------------*/
 @media screen and (max-width: 1000px) {
@@ -79,9 +130,18 @@ margin: 8rem;
 }
 
 .intro-text{
-    font-size: 2.5rem;
+    font-size: 1.2rem;
     margin-bottom: 3rem;
 }
+
+/* .intro-text{
+  font-size: 1.8rem;
+  margin-bottom: 3rem;
+}
+
+.heading{
+font-weight: normal;
+} */
 
 .about{
   margin-top: 3rem;
@@ -94,10 +154,10 @@ margin: 8rem;
 
 .about-title{
   display: flex;
-  font-size: 2.5rem;
+  font-size: 1.6rem;
   text-underline-offset: 0.2em;
   text-decoration: underline;
-  text-decoration-thickness: 3px;
+  text-decoration-thickness: 1.5px;
 }
 
 .about-text-main{
@@ -121,10 +181,10 @@ margin: 8rem;
 
   .projects-title{
     display: flex;
-    font-size: 2.5rem;
+    font-size: 1.6rem;
     text-underline-offset: 0.2em;
     text-decoration: underline;
-    text-decoration-thickness: 3px;
+    text-decoration-thickness: 1.5px;
   }
 
 
@@ -144,7 +204,7 @@ margin: 8rem;
 }
 
 .intro-text{
-    font-size: 2rem;
+    font-size: 1.2rem;
     margin-bottom: 3rem;
 }
 
@@ -159,10 +219,7 @@ margin: 8rem;
 
 .about-title{
   display: flex;
-  font-size: 2rem;
-  text-underline-offset: 0.2em;
-  text-decoration: underline;
-  text-decoration-thickness: 1.5px;
+  font-size: 1.3rem;
 }
 
 .about-text-main{
@@ -186,15 +243,12 @@ margin: 8rem;
   
   .projects-title{
     display: flex;
-    font-size: 2rem;
-    text-underline-offset: 0.3em;
-    text-decoration: underline;
-    text-decoration-thickness: 1.5px;
+    font-size: 1.3rem;
   }
 
   .projects-cards{
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 3rem;
   }
 

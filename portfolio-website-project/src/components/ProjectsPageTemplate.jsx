@@ -23,9 +23,11 @@ const ProjectsPageTemplate = ({
 }) => {
   return (
     <>
+    <div className="ProjectsPage-container">
+      
       <img src={backgroundImg1} className="topimage" alt="section1-image" />
 
-      <div className="Page-container">
+      <div className="content-container">
         <div className="section1">
           <div className="path">
             <Link to="/">Home</Link> / <Link to="/">Projects</Link> /{" "}
@@ -150,6 +152,7 @@ const ProjectsPageTemplate = ({
         <ProjectsNavigation prevLink={prevPage} nextLink={nextPage} />
         <ChatLink />
       </div>
+    </div>  
     </>
   );
 };

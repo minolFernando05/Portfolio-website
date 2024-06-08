@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 
 import Card from '../components/Card';
 
+import './ProjectsPage.css';
+
 /*Import of end components*/
 import ChatLink from '../components/chatlink.jsx';
 
@@ -18,6 +20,7 @@ import cardImage4 from '../assets/cardImages/card-4-img.png';
 function ProjectsPageDesign() {
   return (
     <>
+    <div className='ProjectPage-container'>
           <div className='projects'>
           <div className='projects-title'>
               <p>Projects</p>
@@ -83,6 +86,8 @@ function ProjectsPageDesign() {
           </div>
 
     <ChatLink/>
+
+    </div>
 
     </>
   );
