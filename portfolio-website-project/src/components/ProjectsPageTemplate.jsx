@@ -157,15 +157,15 @@ const ProjectsPageTemplate = ({
   );
 };
 
-ProjectsPageTemplate.defaultProps = {
-    Img2: null,sec2Text: '',sec2_Title2: '',sec2_Text2: '',
-    Img3: null,sec3Text: '',sec3_Title2: '',sec3_Text2: '',
-    Img4: null,sec4Text: '',sec4_Title2: '',sec4_Text2: '',
-    Img5: null,sec5Text: '',sec5_Title2: '',sec5_Text2: '',
-    Img6: null,sec6Text: '',sec6_Title2: '',sec6_Text2: '',
-    Img7: null,sec7Text: '',sec7_Title2: '',sec7_Text2: '',
-    Img8: null,sec8Text: '',sec8_Title2: '',sec8_Text2: '',
-    Img9: null,sec9Text: '',sec9_Title2: '',sec9_Text2: '',
-};
+// ProjectsPageTemplate.defaultProps = {
+//     Img2: null,sec2Text: '',sec2_Title2: '',sec2_Text2: '',
+//     Img3: null,sec3Text: '',sec3_Title2: '',sec3_Text2: '',
+//     Img4: null,sec4Text: '',sec4_Title2: '',sec4_Text2: '',
+//     Img5: null,sec5Text: '',sec5_Title2: '',sec5_Text2: '',
+//     Img6: null,sec6Text: '',sec6_Title2: '',sec6_Text2: '',
+//     Img7: null,sec7Text: '',sec7_Title2: '',sec7_Text2: '',
+//     Img8: null,sec8Text: '',sec8_Title2: '',sec8_Text2: '',
+//     Img9: null,sec9Text: '',sec9_Title2: '',sec9_Text2: '',
+// };
 
 export default ProjectsPageTemplate;

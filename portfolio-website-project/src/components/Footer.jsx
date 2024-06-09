@@ -1,6 +1,9 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
+//import css
 import './Footer.css';
-import navLogo from "../assets/ryan-web-logo2.svg";
+
 import linkedinLogo from "../assets/socialMediaLogos/linkedin.svg";
 import dribbleLogo from "../assets/socialMediaLogos/Dribble.svg";
 import instagramLogo from "../assets/socialMediaLogos/instagram.svg";
@@ -37,7 +40,7 @@ function Footer() {
           </div>
 
           <div className="footer-logo">
-            <a href="/" className="footer-logo-link"><p>Ryan<br></br>Comester</p></a>
+            <Link to="/" className="footer-logo-link"><p>Ryan<br></br>Comester</p></Link>
           </div>
         </div>
       </div>

@@ -3,15 +3,15 @@ import React from 'react';
 
 const SectionComponent = ({
   imgSrc,
-  imgAlt,
-  text,
-  title2,
-  text2,
-  sectionClass,
-  imgClass,
-  textClass,
-  titleClass,
-  text2Class
+  imgAlt= 'default-image-alt',
+  text= '',
+  title2= '',
+  text2= '',
+  sectionClass= 'default-section',
+  imgClass= 'default-img',
+  textClass= 'default-text',
+  titleClass= 'default-title',
+  text2Class= 'default-text2'
 }) => {
   return (
     <div className={sectionClass}>
@@ -35,17 +35,17 @@ const SectionComponent = ({
   );
 };
 
-SectionComponent.defaultProps = {
-  imgSrc: null,
-  imgAlt: 'default-image-alt',
-  text: '',
-  title2: '',
-  text2: '',
-  sectionClass: 'default-section',
-  imgClass: 'default-img',
-  textClass: 'default-text',
-  titleClass: 'default-title',
-  text2Class: 'default-text2'
-};
+// SectionComponent.defaultProps = {
+//   imgSrc: null,
+//   imgAlt: 'default-image-alt',
+//   text: '',
+//   title2: '',
+//   text2: '',
+//   sectionClass: 'default-section',
+//   imgClass: 'default-img',
+//   textClass: 'default-text',
+//   titleClass: 'default-title',
+//   text2Class: 'default-text2'
+// };
 
 export default SectionComponent;

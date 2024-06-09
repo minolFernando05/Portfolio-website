@@ -20,7 +20,7 @@ function Home() {
 
       <div className='intro'>
           <div className='intro-text'>
-              <h1 class="heading">Hello, I am a <b>UI/UX designer</b> based off Colombo, Sri Lanka.</h1>
+              <h1 className="heading">Hello, I am a <b>UI/UX designer</b> based off Colombo, Sri Lanka.</h1>
           </div>
           <img src={HeroBackground} className='intro-image' alt="hero-background"/>
       </div>
@@ -28,7 +28,7 @@ function Home() {
 
       <div className='about'>
           <div className='about-title'>
-              <h2  class="heading2">About Me</h2>
+              <h2  className="heading2">About Me</h2>
           </div>
           <div className='about-text'>
               <div className='about-text-main'>
@@ -51,7 +51,7 @@ function Home() {
 
       <div className='projects'>
           <div className='projects-title'>
-              <h2  class="heading2">Projects</h2>
+              <h2  className="heading2">Projects</h2>
           </div>
           <div className='projects-cards'>
               <Card
