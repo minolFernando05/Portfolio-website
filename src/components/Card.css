@@ -7,16 +7,7 @@
   flex-direction: column;
   height: fit-content;
   overflow: hidden;
-  
 }
-
-/* .card-image{
-  height: 50%;
-  width: 19vw;
-  transition: transform 0.4s;
-  animation: ease-in;
-  overflow: hidden;
-} */
 
 .card-image {
   display: block;
@@ -33,11 +24,6 @@
   transform: scale(1.1);
 }
 
-/* .inner-card-textbody{
-  text-align: left;
-  color: var(--Primary-Light-Black, #212129);
-  font-family: "Inter";
-} */
 
 /*removes the underline*/
 .card-container a {

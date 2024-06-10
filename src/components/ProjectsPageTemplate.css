@@ -40,6 +40,15 @@ Note: Negative values are allowed.*/
     animation: jumpIn_2 1s ease-out;
   }
 
+  .ProjectsPage-container{
+    /*to limit horizontal streching in 4k*/
+  justify-content: center; /* Center items horizontally */
+  align-items: center; /* Center items vertically */
+  max-width: 2000px; /* Maximum width of the container */
+  width: 100%; /* Full width up to the max-width */
+  margin: 0 auto; /* Center the container within its parent */
+  }
+
 /*---------------------Scroll animation----------------------*/
 @keyframes appear {
   from {

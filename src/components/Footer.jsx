@@ -9,6 +9,8 @@ import dribbleLogo from "../assets/socialMediaLogos/Dribble.svg";
 import instagramLogo from "../assets/socialMediaLogos/instagram.svg";
 import twitterLogo from "../assets/socialMediaLogos/twitter.svg";
 
+import FooterLogo from "../assets/FooterLogo.svg";
+
 
 function Footer() {
   return (
@@ -18,7 +20,7 @@ function Footer() {
 
           <div className="footer-text">
             <div className="contact-form">
-              <a href="/" className="toForm">Get In Touch</a>
+              <Link to="/" className="toForm">Get In Touch</Link>
             </div>
             <div className="mailTo">
             <a href="mailto:ryancomester@gmail.com" className="toMail">ryancomester@gmail.com</a>
@@ -40,7 +42,7 @@ function Footer() {
           </div>
 
           <div className="footer-logo">
-            <Link to="/Portfolio-website" className="footer-logo-link"><p>Ryan<br></br>Comester</p></Link>
+            <Link to="/Portfolio-website" className="footer-logo-link"><img src={FooterLogo} alt="footer-logo"/></Link>
           </div>
         </div>
       </div>
@@ -49,3 +51,4 @@ function Footer() {
 }
 
 export default Footer;
+
