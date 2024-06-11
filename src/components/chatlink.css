@@ -12,6 +12,12 @@
     padding: 0.5rem;
 }
 
+/*removes the underline*/
+.sub a {
+    text-decoration: none;
+    color: inherit;
+  }
+
 .sub{
     font-size: 1.2rem;
     color: #0072f7;
@@ -34,3 +40,6 @@
         font-size: 1rem;
     }
 }
+
+
+  

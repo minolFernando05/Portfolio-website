@@ -23,6 +23,7 @@ import PracticeWork from "./assets/CaseStudyPages/PracticeWork.jsx";
 import ProjectsPage from "./pages/ProjectsPage.jsx";
 import ContactForm from "./pages/ContactForm.jsx";
 import AboutMe from "./pages/AboutMe.jsx";
+import NotFound from "./components/not-fount.jsx";
 
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
         <Route path="/projectsPage" element={<ProjectsPage/>}/>
         <Route path="/contactForm" element={<ContactForm/>}/>
         <Route path="/aboutMe" element={<AboutMe/>}/>
+        <Route path="*" element={<NotFound/>}/>
     </Routes>
     <Footer/>
     </>

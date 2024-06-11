@@ -1,0 +1,115 @@
+/* App.css */
+.not-fount-background-container {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 90vh; /* Full viewport height */
+    background-color: white; /* Set background color to white */
+  }
+  
+  .not-fount-background-image {
+    width: 50%; /* Adjust the width as needed */
+    height: 50%; /* Adjust the height as needed */
+    background-image: url('../assets/404-Img.svg'); /* Path to your image */
+    background-size: contain; /* Scale the image to fit within the element */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+  }
+  
+  .not-fount-text-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 12%;
+  }
+
+  .not-found-title {
+    margin: rem 0;
+    font-size: 4rem;
+    font-weight: 400;
+  }
+  
+  .not-found-description {
+    margin-bottom: 2rem;
+    font-size: 1.125rem;
+    font-weight: 400;
+  }
+  
+  .not-found-home-button {
+    background-color:  #ffffff9d;
+    color: #000000;
+    padding: 0.8rem 1rem;
+    text-decoration: none;
+    border: 3px solid rgba(0, 0, 0, 0.3);
+  }
+  
+  .not-found-home-button:hover {
+    background-color: #000000;
+    transition: all 0.3s ease-out;
+    color: #ffffff;
+  }
+
+  /*-------------------------------------------------------------------------*/
+/*tablet*/
+@media screen and (max-width: 1100px) {
+
+  .not-fount-background-container {
+    height: 65vh; /* Full viewport height */
+  }
+
+  .not-fount-background-image {
+    width: 80%; /* Adjust the width as needed */
+    height: 80%; /* Adjust the height as needed */
+  }
+
+  .not-fount-text-content{
+    margin-top: 38%;
+  }
+
+  .not-found-title {
+    font-size: 5rem;
+  }
+  
+  .not-found-description {
+    font-size: 1.5rem;
+  }
+
+  .not-found-home-button {
+    font-size: 1.5rem;
+  }
+
+}
+
+/*mobile*/
+@media screen and (max-width: 650px) {
+
+  .not-fount-background-container {
+    height: 60vh; /* Full viewport height */
+  }
+
+  .not-fount-background-image {
+    width: 80%; /* Adjust the width as needed */
+    height: 80%; /* Adjust the height as needed */
+  }
+
+  .not-fount-text-content{
+    margin-top: 35%;
+  }
+
+  .not-found-title {
+    font-size: 2.3rem;
+    font-weight: 500;
+    margin-bottom: 2rem;
+  }
+  
+  .not-found-description {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-top: 5;
+  }
+
+  .not-found-home-button {
+    font-size: 1.rem;
+  }
+
+}
