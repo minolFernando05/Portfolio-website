@@ -6,11 +6,6 @@ import NavBar from "./components/NavBar.jsx";
 import Footer from "./components/Footer.jsx";
 
 
-import Header from "./Header.jsx"
-import Food from "./Food.jsx";
-
-
-
 //Scrool and transition effects
 import ScrollToTop from "./components/ScrollToTop.jsx";
 
@@ -33,7 +28,6 @@ function App() {
     <NavBar/>
     <Routes>
         <Route path="/" element={<Home/>}/>
-        <Route path="/food" element={<Food/>}/>
         <Route path="/datapel" element={<Datapel/>}/>
         <Route path="/shitPapers" element={<ShitPapers/>}/>
         <Route path="/plab" element={<Plab/>}/>
