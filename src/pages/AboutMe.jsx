@@ -22,21 +22,27 @@ function AboutMeDesign() {
             </div>
             
             <div className='AboutMe-text'>
-
+                
+                <div className='AboutMe-text-1'>
                 <p>My love for design started when I was a teenager creating artworks
                 & designing posters for my friends. I pursued my passion for design by 
                 getting myself enrolled in a bachelors program in design at the Academy 
                 for Multimedia, Design & Technology (AMDT).
                 </p>
+                </div>
 
+                <div className='AboutMe-text-1'>
                 <p>Everyday I’m motivated by the opportunity to solve real problems for
                 people. I’m always trying to improve my craft, continue learning, and help
                 myself and others grow as designers.
                 </p>
-
+                </div>
+                
+                <div className='AboutMe-text-1'>
                 <p>When I'm not designing you'll find me painting sceneries, playing 
                 assassins creed, or playing with my dog.
                 </p>
+                </div>
 
             </div>
 

@@ -39,11 +39,10 @@
     max-width: 60%;
 }
 
-p{
-    font-size: 1rem;
+.AboutMe-text-1{
     font-style: normal;
-    font-weight: 500;
-    line-height: 1.8rem;
+    font-size: 1.2rem;
+    line-height: 160%;
     margin-bottom: 2rem;
 }
 
