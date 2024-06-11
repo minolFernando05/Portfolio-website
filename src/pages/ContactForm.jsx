@@ -1,14 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-import Card from '../components/Card';
-
 import { useState } from 'react';
 
 import './ContactForm.css';
 
-/*Import of end components*/
-import ChatLink from '../components/chatlink.jsx';
 
 function ContactFormDesign() {
     const [inputs, setInputs] = useState("");
