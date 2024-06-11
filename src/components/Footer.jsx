@@ -42,7 +42,7 @@ function Footer() {
           </div>
 
           <div className="footer-logo">
-            <Link to="/home" className="footer-logo-link"><img src={FooterLogo} alt="footer-logo"/></Link>
+            <Link to="/" className="footer-logo-link"><img src={FooterLogo} alt="footer-logo"/></Link>
           </div>
         </div>
       </div>

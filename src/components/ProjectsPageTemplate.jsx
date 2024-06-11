@@ -30,7 +30,7 @@ const ProjectsPageTemplate = ({
       <div className="content-container">
         <div className="section1">
           <div className="path">
-            <Link to="/home">Home</Link> / <Link to="/projectsPage">Projects</Link> /{" "}
+            <Link to="/">Home</Link> / <Link to="/projectsPage">Projects</Link> /{" "}
             {projectName}
           </div>
 
