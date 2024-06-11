@@ -20,7 +20,7 @@ function Footer() {
 
           <div className="footer-text">
             <div className="contact-form">
-              <Link to="/" className="toForm">Get In Touch</Link>
+              <Link to="/contactForm" className="toForm">Get In Touch</Link>
             </div>
             <div className="mailTo">
             <a href="mailto:ryancomester@gmail.com" className="toMail">ryancomester@gmail.com</a>

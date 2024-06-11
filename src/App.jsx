@@ -21,6 +21,7 @@ import ShitPapers from './assets/CaseStudyPages/ShitPapers.jsx';
 import Plab from './assets/CaseStudyPages/Plab.jsx';
 import PracticeWork from "./assets/CaseStudyPages/PracticeWork.jsx";
 import ProjectsPage from "./pages/ProjectsPage.jsx";
+import ContactForm from "./pages/ContactForm.jsx";
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
         <Route path="/plab" element={<Plab/>}/>
         <Route path="/practiceWork" element={<PracticeWork/>}/>
         <Route path="/projectsPage" element={<ProjectsPage/>}/>
+        <Route path="/contactForm" element={<ContactForm/>}/>
     </Routes>
     <Footer/>
     </>

@@ -12,7 +12,7 @@ function chatLink() {
                 Interested in my work?
             </div>
             <div className='sub'>
-                <Link to="/food">
+                <Link to="/contactForm">
                 Let's chat &#8594;
                 </Link>
             </div>
