@@ -36,7 +36,7 @@ This React project is a template for creating project pages with a consistent st
     ```bash
     npm run dev
     ```
-2. Open your browser and navigate to `http://localhost:3000` to view the app.
+2. Open your browser and navigate to `http://localhost:5173` to view the app.
 
 ## Project Structure
 
@@ -44,33 +44,51 @@ This React project is a template for creating project pages with a consistent st
 react-projects-page-template/
 │
 ├── public/
-│ ├── index.html
-│ └── ...
+│   ├── index.html
+│   └── ...
 │
 ├── src/
-│ ├── assets/
-│ │ └── CaseStudyPages/
-│ │ ├── Datapel.jsx
-│ │ ├── ShitPapers.jsx
-│ │ ├── Plab.jsx
-│ │ └── PracticeWork.jsx
-│ ├── components/
-│ │ ├── ScrollToTop.jsx
-│ │ ├── PageTransition.jsx
-│ │ ├── NavBar.jsx
-│ │ ├── projectNav.jsx
-│ │ └── chatlink.jsx
-│ ├── pages/
-│ │ ├── Home.jsx
-│ │ └── ProjectsPage.jsx
-│ ├── App.jsx
-│ ├── index.js
-│ └── ...
+│   ├── assets/
+│   │   ├─── CaseStudyPages/
+│   │   │    ├── Datapel.jsx
+│   │   │    ├── ShitPapers.jsx
+│   │   │    ├── Plab.jsx
+│   │   │    └── PracticeWork.jsx
+│   │   ├─── AboutMeImages/
+│   │   ├─── cardImages/
+│   │   ├─── datapelImages/
+│   │   ├─── plabImages/
+│   │   ├─── practiceWorkImages/
+│   │   ├─── shitPapersImages/
+│   │   ├─── socialMediaImages/
+│   │   └─── ...
+│   ├── components/
+│   │   ├── ScrollToTop.jsx
+│   │   ├── ProjectsPageTemplate.jsx
+│   │   ├── NavBar.jsx
+│   │   ├── Button.jsx
+│   │   ├── Card.jsx
+│   │   ├── Footer.jsx
+│   │   ├── SectionComponent.jsx
+│   │   ├── projectNav.jsx
+│   │   └── chatlink.jsx
+│   ├── pages/
+│   │   ├── AboutMe.jsx
+│   │   ├── ContactForm.jsx
+│   │   ├── Home.jsx
+│   │   ├── not-found.jsx
+│   │   ├── Home.jsx
+│   │   └── ProjectsPage.jsx
+│   ├── App.jsx
+│   ├── main.jsx
+│   ├── index.js
+│   └── ...
 │
 ├── .gitignore
 ├── package.json
 ├── README.md
 └── ...
+
 ```
 
 
