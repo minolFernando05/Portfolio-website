@@ -72,7 +72,7 @@
       }
       
       .projectsPage-cards {
-        gap: 2rem;
+        gap: 1rem;
         grid-template-columns: repeat(2, 1fr);
         margin-bottom: 3rem;
       }
