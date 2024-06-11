@@ -31,7 +31,7 @@ function App() {
     <ScrollToTop />
     <NavBar/>
     <Routes>
-        <Route path="/Portfolio-website" element={<Home/>}/>
+        <Route path="/Home" element={<Home/>}/>
         <Route path="/food" element={<Food/>}/>
         <Route path="/datapel" element={<Datapel/>}/>
         <Route path="/shitPapers" element={<ShitPapers/>}/>
