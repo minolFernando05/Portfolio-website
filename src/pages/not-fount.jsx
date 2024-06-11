@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 
 import './not-fount.css';
 
-import img404 from '../assets/404-Img.svg';
 
 function notFountDesign() {
     return (

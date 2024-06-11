@@ -23,7 +23,7 @@ import PracticeWork from "./assets/CaseStudyPages/PracticeWork.jsx";
 import ProjectsPage from "./pages/ProjectsPage.jsx";
 import ContactForm from "./pages/ContactForm.jsx";
 import AboutMe from "./pages/AboutMe.jsx";
-import NotFound from "./components/not-fount.jsx";
+import NotFound from "./pages/not-fount.jsx";
 
 
 function App() {

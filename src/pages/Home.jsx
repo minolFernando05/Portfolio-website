@@ -34,9 +34,9 @@ function Home() {
                 </div>
                 <div className='about-text'>
                     <div className='about-text-main'>
-                        <p>I create <span className="highlight">user-centered designs</span> for  
+                        I create <span className="highlight">user-centered designs</span> for  
                         <span className="highlight"> digital products</span> and
-                        <span className="highlight"> interfaces</span>, ensuring the user an enjoyable experience</p>
+                        <span className="highlight"> interfaces</span>, ensuring the user an enjoyable experience.
                     </div>
                     <div className='about-text-sub'>
                         <p>I am a User Experience Designer based in Sri Lanka with 6 months of experience in the field. 
